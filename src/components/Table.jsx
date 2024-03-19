@@ -56,7 +56,7 @@ export default function Table() {
                 {row.cells.map(cell => {
                   return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
                 })}
-                <td><button onClick={()=>alert('her')}>hey</button></td>
+                <td><button onClick={()=>alert(row.original.id)}>hey</button></td>
               </tr>
             )
           })}
