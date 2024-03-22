@@ -8,23 +8,17 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='flex-col justify-center'>
       <div>
         
         
       </div>
-      <h1>Adding tailwind</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        
-      </div>
-      <p className="read-the-docs">
+      <h1 className='text-3xl font-bold underline rotate-12'>Adding tailwind</h1>
+      <p className='m-10 text-tahiti text-3xl'>
        let use react table
       </p>
       <Table />
-    </>
+    </div>
   )
 }
 

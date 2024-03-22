@@ -62,15 +62,28 @@ export default function Table() {
 
 
     return (
-        <div>
-            <label>Search by name: </label>
-            <input
-                type="text"
-                value={filterInput}
-                onChange={handleFilterChange}
-            />
-            <table {...getTableProps()} style={{borderCollapse:'collapse', minWidth:'1000px'}}>
-                <thead style={{background:'grey'}}>
+        <div className=''> 
+            <div className=' bg-slate-300 flex-col gap-9'>
+
+                <input
+                    type="text"
+                    value={filterInput}
+                    onChange={handleFilterChange}
+                    className=' border-black outline-double'
+                    
+                />
+                <label>
+                    <input type="checkbox"/>
+                    <span></span>
+                </label>
+                <label className='text-3xl bg-midnight text-white'>Search by name: </label>
+            </div>
+
+
+
+
+            <table {...getTableProps()} className='bg-tahiti' style={{borderCollapse:'collapse', minWidth:'1000px'}}>
+                <thead className='bg-silver'>
                     {headerGroups.map(headerGroup => (
                         <tr {...headerGroup.getHeaderGroupProps()}>
                             {headerGroup.headers.map(column => (
