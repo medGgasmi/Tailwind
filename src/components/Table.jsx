@@ -86,7 +86,7 @@ export default function Table() {
 
 
 
-            <table {...getTableProps()} className='bg-tahiti w-full' style={{borderCollapse:'collapse', minWidth:'1000px'}}>
+            <table {...getTableProps()} className='bg-tahiti w-full shadow-2xl' style={{borderCollapse:'collapse', minWidth:'1000px'}}>
                 <thead className='bg-silver'>
                     {headerGroups.map(headerGroup => (
                         <tr {...headerGroup.getHeaderGroupProps()}>
