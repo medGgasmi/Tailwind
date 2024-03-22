@@ -14,7 +14,7 @@ function App() {
         
       </div>
       <h1 className='text-3xl font-bold underline rotate-12'>Adding tailwind</h1>
-      <p className='m-10 text-tahiti text-3xl'>
+      <p className='m-10 text-tahiti text-9xl'>
        let use react table
       </p>
       <Table />

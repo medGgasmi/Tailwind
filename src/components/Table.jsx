@@ -62,27 +62,31 @@ export default function Table() {
 
 
     return (
-        <div className=''> 
-            <div className=' bg-slate-300 flex-col gap-9'>
-
+        <div> 
+            <div className=' flex flex-col'>
+                <label className=' text-left'>
+                    search for a product
+                </label>
                 <input
                     type="text"
                     value={filterInput}
                     onChange={handleFilterChange}
-                    className=' border-black outline-double'
-                    
+                    className=' border-black outline-double w-64' 
+                   
                 />
                 <label>
-                    <input type="checkbox"/>
-                    <span></span>
+                    this is going to be theme switcher
                 </label>
-                <label className='text-3xl bg-midnight text-white'>Search by name: </label>
+                <label>
+                    <input type="checkbox"/>
+                </label>
+            
             </div>
 
 
 
 
-            <table {...getTableProps()} className='bg-tahiti' style={{borderCollapse:'collapse', minWidth:'1000px'}}>
+            <table {...getTableProps()} className='bg-tahiti w-full' style={{borderCollapse:'collapse', minWidth:'1000px'}}>
                 <thead className='bg-silver'>
                     {headerGroups.map(headerGroup => (
                         <tr {...headerGroup.getHeaderGroupProps()}>
